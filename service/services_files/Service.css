@@ -160,7 +160,7 @@
 
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('/Resources/kerala-honeymoon.webp') center 90%/cover no-repeat;
+                url('kerala-honeymoon.webp') center 90%/cover no-repeat;
     color: white;
     padding: 150px 0;
     text-align: center;
