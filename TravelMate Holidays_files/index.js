@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const navbar = document.querySelector(".navbar");
     
-    // Function to handle scroll effects
+
     const handleScroll = () => {
         if (window.innerWidth > 990) {
             if (window.scrollY > 50) {
@@ -12,13 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Initial check
+ 
     handleScroll();
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
     
-    // Handle window resize
+   
     window.addEventListener("resize", handleScroll);
 });
 document.addEventListener("DOMContentLoaded", () => {
@@ -48,10 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Scroll event listener
+
     window.addEventListener('scroll', toggleToTopButton);
 
-    // Scroll to top functionality
+
     toTopButton.addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({
