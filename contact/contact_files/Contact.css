@@ -181,7 +181,7 @@ body {
 .hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../public/munnar_package.webp") center/cover no-repeat;
+    url("munnar_package.webp") center/cover no-repeat;
   color: white;
   padding: 150px 0;
   text-align: center;
