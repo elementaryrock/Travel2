@@ -97,7 +97,7 @@ body {
 
 /* Nav link styles */
 .nav-link {
-    color: #ffffff;
+    color: #000
     font-weight: 500;
     transition: color 0.3s ease-in-out;
     position: relative;
