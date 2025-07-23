@@ -3,7 +3,6 @@ html {
     padding: 0;
     overflow-x: hidden;
 
-    /* Prevent horizontal scrolling caused by extra space */
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,14 +18,13 @@ body {
 
 .fs-xl-5 {
     font-size: 1.25rem;
-    /* Matches Bootstrap's fs-5 size */
+   
 }
 
 
 @media (max-width: 992px) {
     .navbar {
         background-color: #ffffff;
-        /* Replace with desired solid color */
         padding: 0 !important;
     }
 
@@ -37,14 +35,11 @@ body {
     .navbar-toggler {
         color: rgb(22, 21, 21);
         border-color: rgb(0, 0, 0);
-        /* Ensures the border of the button is white */
         margin: 0;
-        /* Removes any margin */
         position: absolute;
         top: 2rem;
         right: 1rem;
         z-index: 1031;
-        /* Ensures it appears above other elements */
     }
 
     .navbar-toggler-icon {
@@ -54,7 +49,6 @@ body {
 
     .fs-xl-5 {
         font-size: inherit;
-        /* Reverts to default size on smaller screens */
     }
 
     .nav-item {
@@ -74,17 +68,13 @@ body {
         margin-top: 75% !important;
     }
 
-} /* --- end of @media (max-width: 992px) --- */
-
-/* Primary nav-link styling */
+}
 .nav-link {
     color: #000;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
     position: relative;
 }
-
-/* underline animation */
 .nav-link::after {
     content: '';
     position: absolute;
@@ -124,8 +114,6 @@ body {
     color: #ffffff;
     background-color: #3b3b3b;
 }
-/* Book Now button style */
-
 .book-now-btn{
     background-color: #e9f0f8;
     color: #000000 !important;
@@ -148,11 +136,6 @@ body {
     transform: scale(0.9);
     box-shadow: inset 2px 2px 10px 3px #8b8b8b;
 }
-
-/* ---------navbar End--------- */
-
-/* ---------Hero Section--------- */
-
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                 url('../../public/adventure.webp') center/cover no-repeat;
@@ -175,15 +158,10 @@ body {
     }
 }
 
-/* ---------Hero End--------- */
-/*about section*/
-
 .about-section {
     padding: 80px 0;
     background-color: #f8f9fa;
 }
-
-/*values section*/
 
 .values-section {
     background-color: #f1f3f5;
@@ -209,9 +187,6 @@ body {
     color: #186aa0;
     margin-bottom: 15px;
 }
-
-/*Testimonials section*/
-
 
 .testimonials-section {
     background-color: #f8f9fa;
@@ -268,10 +243,6 @@ body {
         transform: scale(1.02);
     }
 }
-
-
-
-/* ----- Footer Styles---- */
 footer {
     background: linear-gradient(135deg, #2c3e50 0%, #186aa0 100%);
     color: #f4f4f4;
@@ -279,8 +250,6 @@ footer {
     position: relative;
     overflow: hidden;
 }
-
-/* Add a subtle overlay effect */
 footer::before {
     content: '';
     position: absolute;
@@ -352,15 +321,6 @@ footer ul li a:hover {
     background: #3498db;
     transform: scale(1.1);
 }
-
-/* --------footer end------ */
-
-
-
-/* ---------social icons--------- */
-
-/* Social contact Buttons*/
-
 .social-contact-container {
     position: fixed;
     right: 20px;
