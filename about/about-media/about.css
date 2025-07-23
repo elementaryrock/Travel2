@@ -97,15 +97,10 @@ body {
 
 /* Nav link styles */
 .nav-link {
-    color: #ffffff;
+    color: #000
     font-weight: 500;
     transition: color 0.3s ease-in-out;
     position: relative;
-}
-
-/* Scrolled state for nav links */
-.nav-link {
-    color: #000000;
 }
 
 .nav-link::after {
@@ -124,6 +119,7 @@ body {
 .nav-link::after {
     background-color: #000000;
     color: #fff;
+    transition: width 0.4s ease-out;
 }
 
 .nav-link:hover::after,
@@ -185,7 +181,7 @@ body {
 
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('/Resources/adventure.webp') center/cover no-repeat;
+                url('../../public/adventure.webp') center/cover no-repeat;
     color: white;
     padding: 150px 0;
     text-align: center;
