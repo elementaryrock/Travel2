@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)https://travelmateholidays.com/Contact.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelMate Holidays - Explore the World</title>
-    <!-- Bootstrap CSS -->
     <link href="./contact_files/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="./contact_files/all.min.css">
-    <!-- AOS Animation Library -->
     <link href="./contact_files/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./contact_files/Contact.css">
 
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" style="padding-top: 89px;">
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid"> <!-- Use container-fluid for better responsiveness -->
+        <div class="container-fluid">
             <a class="navbar-brand" href="https://travelmateholidays.com/Contact.html#">
                 <img src="./contact_files/logo.png" alt="TravelMate" style="height: auto; max-width: 100%; width: 11rem;">
             </a>
@@ -57,7 +52,6 @@
             </div>
         </div>
     </nav>
-    <!-- 3D Parallax Hero Section -->
     <div class="hero">
         <div class="container">
             <div data-aos="fade-up" class="aos-init aos-animate">
@@ -67,7 +61,6 @@
         </div>
     </div>
 
-    <!-- Information Section -->
     <section class="info-section">
         <div class="container">
             <div class="row g-4">
@@ -96,7 +89,6 @@
         </div>
     </section>
 
-    <!-- Contact Section with Map -->
     <section class="contact-section">
         <div class="container">
             <div class="row g-4 align-items-center">
@@ -126,16 +118,12 @@
                             </div>
                             <button type="submit" class="btn btn-custom w-100">Send Message</button>
                         </form>
-                        <!-- Alert for form submission feedback -->
                         <div class="alert mt-3" role="alert" style="display: none;"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -188,8 +176,6 @@
         </p>
     </div>
 
-    <!-- Social Contact Buttons -->
-
     <div class="social-contact-container">
         <a href="https://wa.me/+91%209048828890" target="_blank" class="social-contact-btn whatsapp-btn" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
@@ -202,36 +188,28 @@
         </a>
     </div>
 
-
-    <!-- Scripts -->
     <script src="./contact_files/bootstrap.bundle.min.js.download"></script>
     <script src="./contact_files/aos.js.download"></script>
     <script>
-        // Initialize AOS
         AOS.init({
             duration: 1000,
             once: true
         });
 
-        // Simple form validation
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('Thank you for your message! We will get back to you soon.');
             this.reset();
         });
 
-
         document.addEventListener("DOMContentLoaded", function () {
             const navbarHeight = document.querySelector('.navbar').offsetHeight;
             document.body.style.paddingTop = `${navbarHeight}px`;
         });
 
-
-        //contact form
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
 
-            // Form validation
             if (!this.checkValidity()) {
                 e.stopPropagation();
                 this.classList.add('was-validated');
@@ -241,8 +219,6 @@
             const formData = new FormData(this);
             const alert = document.querySelector('.alert');
             const submitButton = this.querySelector('button[type="submit"]');
-
-            // Disable submit button during submission
             submitButton.disabled = true;
             submitButton.innerHTML = 'Sending...';
 
@@ -273,10 +249,7 @@
                 });
         });
 
-        // Get current year
-
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
-
 
 </body></html>

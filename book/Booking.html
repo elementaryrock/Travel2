@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)https://travelmateholidays.com/Booknow.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,8 @@
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="200" style="padding-top: 89px;">
-    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid"> <!-- Use container-fluid for better responsiveness -->
+        <div class="container-fluid">
             <a class="navbar-brand" href="https://travelmateholidays.com/Booknow.html#">
                 <img src="./Booking_files/logo.png" alt="TravelMate" style="height: auto; max-width: 100%; width: 11rem;">
             </a>
@@ -54,7 +52,6 @@
         </div>
     </nav>
 
-    <!-- Booking Form -->
     <section class="booking-section py-5">
         <div class="container">
             <div class="booking-container row g-0">
@@ -124,11 +121,9 @@
 
                         <button type="submit" class="btn btn-submit w-100 mt-3">Book Your Trip</button>
 
-                        <!-- Alert for form submission feedback -->
                         <div class="alert mt-3" role="alert" style="display: none;"></div>
                     </form>
                 </div>
-                <!-- Sidebar remains the same as in original -->
                 <div class="col-md-5 col-12 booking-sidebar">
                     <div class="sidebar-feature">
                         <i class="fas fa-dollar-sign"></i>
@@ -169,8 +164,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
 
     <footer class="mt-5">
         <div class="container">
@@ -223,9 +216,6 @@
             © <span id="current-year">2025</span> Agileinfo Techytern Solutions LLP. All rights reserved.
         </p>
     </div>
-
-    <!-- Social Contact Buttons -->
-
     <div class="social-contact-container">
         <a href="https://wa.me/+91%209048828890" target="_blank" class="social-contact-btn whatsapp-btn" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
@@ -243,7 +233,6 @@
     <script src="./Booking_files/swiper-bundle.min.js.download"></script>
 
     <script>
-        // Initialize AOS
         AOS.init({
             offset: 100,
             delay: 200,
@@ -258,20 +247,14 @@
             document.body.style.paddingTop = `${navbarHeight}px`;
         });
 
-
-        // Form Validation
-
-        // Set minimum date to today
         document.addEventListener('DOMContentLoaded', function () {
             const today = new Date().toISOString().split('T')[0];
             document.getElementById('travelDate').setAttribute('min', today);
         });
 
-        // Form handling
         document.getElementById('bookingForm').addEventListener('submit', function (e) {
             e.preventDefault();
 
-            // Form validation
             if (!this.checkValidity()) {
                 e.stopPropagation();
                 this.classList.add('was-validated');
@@ -282,7 +265,6 @@
             const submitButton = this.querySelector('button[type="submit"]');
             const alert = this.querySelector('.alert');
 
-            // Disable submit button and show loading state
             submitButton.disabled = true;
             submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Processing...';
 
@@ -314,7 +296,6 @@
                 });
         });
 
-        // Input validation
         document.getElementById('phoneNumber').addEventListener('input', function (e) {
             this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);
         });
@@ -323,10 +304,7 @@
             this.value = this.value.replace(/[^A-Za-z\s]/g, '');
         });
 
-        // Get current year
-
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
-
 
 </body></html>
